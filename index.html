@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main>
+        <section>
+            <img src="./assets/icons/ulpik_logo.png" alt="Ulpik Logo" srcset="">
+        </section>
+        <p>En construcción...</p>
+
+        <p>Selccione uno de los paises</p>
+        <div class="select-options">
+            <button type="button" onclick="redirect('Ecuador')">🇪🇨 Ecuador</button>
+            <button type="button" onclick="redirect('Mexico')">🇲🇽 México</button>
+        </div>
+    </main>
+    <script>
+        function redirect(country) {
+            if(country === 'Ecuador') {
+                window.location.href = `https://ulpik.com`;
+            }else if(country === 'Mexico') {
+                window.location.href = `https://ulpik.com.mx`;
+            }
+        }
+    </script>
+</body>
+</html>
